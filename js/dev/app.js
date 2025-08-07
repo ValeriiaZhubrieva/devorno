@@ -5293,3 +5293,87 @@ function initSliders() {
   }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
+function stepsFormBlock() {
+  const form = document.querySelector("[data-form-steps]");
+  const formParent = form.parentElement;
+  const steps = form.querySelectorAll("[data-form-step]");
+  const prevBtn = form.querySelector("[data-steps-prev]");
+  const nextBtn = form.querySelector("[data-steps-next]");
+  const sendBtn = form.querySelector("[data-steps-send]");
+  const progress = form.querySelector(".calc-block__progress span");
+  const successBlock = document.querySelector(".calc-block__success");
+  const countCurrent = form.querySelectorAll(".calc-block__count-current");
+  const countTotal = form.querySelectorAll(".calc-block__count-total");
+  countTotal.forEach((count) => {
+    let stepsTotal = steps.length;
+    if (stepsTotal < 10) {
+      count.innerHTML = `/0${stepsTotal}`;
+    } else {
+      count.innerHTML = `/${stepsTotal}`;
+    }
+  });
+  let formStepIndex = 0;
+  prevBtn.addEventListener("click", () => {
+    formStepIndex--;
+    updateFormSteps();
+  });
+  nextBtn.addEventListener("click", () => {
+    formStepIndex++;
+    updateFormSteps();
+  });
+  const updateProgress2 = (steps2, activeStepIndex) => {
+    const percentProgress = (activeStepIndex + 1) / steps2.length * 100;
+    progress.style.width = `${percentProgress}%`;
+    countCurrent.forEach((count) => {
+      let stepIndex = activeStepIndex + 1;
+      if (stepIndex < 10) {
+        count.innerHTML = `0${stepIndex}`;
+      } else {
+        count.innerHTML = `${stepIndex}`;
+      }
+    });
+  };
+  function updateFormSteps() {
+    steps.forEach((step, index) => {
+      step.classList.contains("active") && step.classList.remove("active");
+    });
+    steps[formStepIndex].classList.add("active");
+    if (formStepIndex === 0) {
+      prevBtn.classList.add("hide");
+    } else {
+      prevBtn.classList.remove("hide");
+    }
+    if (formStepIndex === steps.length - 1) {
+      nextBtn.classList.add("hide");
+      sendBtn.classList.remove("hide");
+    } else {
+      nextBtn.classList.remove("hide");
+      sendBtn.classList.add("hide");
+    }
+    updateProgress2(steps, formStepIndex);
+  }
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (formStepIndex === steps.length - 1) {
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method || "POST",
+          body: formData
+        });
+        if (response.ok) {
+          formParent.style.display = "none";
+          successBlock.style.display = "flex";
+        } else {
+          console.error("Form submission failed:", response.status);
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
+    }
+  });
+  updateFormSteps();
+}
+if (document.querySelector("[data-form-steps]")) {
+  stepsFormBlock();
+}

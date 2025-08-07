@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,8 +16,8 @@
 		crossorigin="anonymous">
 	<link rel="shortcut icon" href="./assets/img/favicon.ico">
 	<title>Devorno</title>
-	<script type="module" crossorigin="" src="./js/app.min.js?v=1754467071767"></script>
-	<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754467071767">
+	<script type="module" crossorigin="" src="./js/app.min.js?v=1754553670353"></script>
+	<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754553670353">
 </head>
 
 <body>
@@ -133,7 +133,7 @@
 				<!--
 <picture>
 <source srcset="@img/hero-bg-mob.jpg" media="(max-width: 479.98px)">
-<img class="hero__bg" src="@img/hero-bg.jpg" alt="Image">
+<img class="hero__bg" src="@img/hero-bg.jpg" alt="Image" loading="lazy">
 </picture>
 -->
 			</section>
@@ -1003,6 +1003,7 @@
 				            		        <p><strong>Адреса:</strong> ${place.formatted_address}</p>
 				            		    </div>
 				            		`;
+
 									const infowindow = new google.maps.InfoWindow({
 										content: contentString,
 										maxWidth: 300
