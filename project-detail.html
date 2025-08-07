@@ -16,8 +16,8 @@
 		crossorigin="anonymous">
 	<link rel="shortcut icon" href="./assets/img/favicon.ico">
 	<title>Devorno</title>
-	<script type="module" crossorigin="" src="./js/app.min.js?v=1754553670353"></script>
-	<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754553670353">
+	<script type="module" crossorigin="" src="./js/app.min.js?v=1754573585490"></script>
+	<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754573585490">
 </head>
 
 <body>
@@ -35,10 +35,10 @@
 						</a>
 					</div>
 					<div class="header__right">
-						<a href="#" class="header__btn button">
+						<button type="button" data-fls-popup-link="popup-quiz" class="header__btn button">
 							<span class="header__btn-text-1">Рассчитать стоимость проекта</span>
 							<span class="header__btn-text-2">Рассказать о проекте</span>
-						</a>
+						</button>
 						<div class="header__languages lang-block" data-fls-dynamic=".menu__body, 767.98">
 							<ul class="lang-block__list">
 								<li>
@@ -707,6 +707,273 @@
 							</svg>
 						</button>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-fls-popup="popup-quiz" aria-hidden="true" class="popup popup--quiz">
+		<div data-fls-popup-wrapper="" class="popup__wrapper">
+			<div data-fls-popup-body="" class="popup__body">
+				<button data-fls-popup-close="" type="button" class="popup__close">
+					<svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M30 2.35703L27.643 0L15 12.6435L2.35703 0L0 2.35703L12.643 15L0 27.643L2.35703 30L15 17.357L27.643 30L30 27.643L17.357 15L30 2.35703Z"
+							fill="currentColor"></path>
+					</svg>
+				</button>
+				<div data-fls-popup-content="" class="calc-block">
+					<div class="calc-block__container">
+						<div class="calc-block__body">
+							<h1 class="calc-block__title title">Расчитать стоимость проекта</h1>
+							<form action="/submit" data-form-steps="" class="calc-block__form" method="POST">
+								<div data-form-step="" class="calc-block__step active">
+									<div class="calc-block__head">
+										<div class="calc-block__count">
+											<span class="calc-block__count-current">01</span>
+											<span class="calc-block__count-total">/06</span>
+										</div>
+										<div class="calc-block__subtitle">Выбор услуги</div>
+									</div>
+									<div class="service-options">
+										<label class="service-options__item">
+											<input class="service-options__input" checked type="radio" value="1"
+												name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-1.webp">
+												<span class="service-options__text">Приложение</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="2" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-2.webp">
+												<span class="service-options__text">Софт</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="3" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-3.webp">
+												<span class="service-options__text">Сайт</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="4" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-4.webp">
+												<span class="service-options__text">Моб приложение</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="5" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-5.webp">
+												<span class="service-options__text">Не знаю</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">02</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Нужна
+													консультация?</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1"
+														name="consultation">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Треба консультація</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2"
+														name="consultation">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Ми знаємо точно що хочемо</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-6.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">03</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Когда готовы
+													начать?</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1"
+														name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Найближчим часом</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">1-2 міс</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="3" name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">2 або більше міс</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-7.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">04</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Бюджет</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1"
+														name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">до 5 тис $</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">5-10 $</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="3" name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">від 10 $</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-8.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">05</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Опис проекта, ідеї
+													або поточної
+													проблеми</div>
+											</div>
+											<textarea autocomplete="off" name="comment" placeholder="Комменатрий"
+												class="calc-block__input input"></textarea>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-9.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">06</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Контактні дані</div>
+											</div>
+											<div class="calc-block__inputs">
+												<input autocomplete="off" type="text" name="name" placeholder="Имя"
+													class="calc-block__input input" required>
+												<input autocomplete="off" type="tel" name="phone" placeholder="Телефон"
+													class="calc-block__input input" required>
+												<input autocomplete="off" type="text" name="email" placeholder="Email"
+													class="calc-block__input input" required>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-10.webp">
+										</div>
+									</div>
+								</div>
+								<div class="calc-block__bottom">
+									<div class="calc-block__btns">
+										<button data-steps-prev="" type="button"
+											class="calc-block__btn button-empty button-small">
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.62666 11.4694L20.306 11.4694L20.306 13.5524L7.62739 13.5532L13.2143 19.1401L11.7411 20.6132L3.63887 12.5109L11.7411 4.40867L13.2143 5.88181L7.62666 11.4694Z"
+													fill="currentColor"></path>
+											</svg>
+											<span>Назад</span>
+										</button>
+										<button data-steps-next="" type="button"
+											class="calc-block__btn button-empty button-small">
+											<span>Далее</span>
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z"
+													fill="currentColor"></path>
+											</svg>
+										</button>
+										<button data-steps-send="" type="submit"
+											class="calc-block__btn button-empty button-small hide">
+											<span>Отправить</span>
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z"
+													fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="calc-block__progress">
+									<span></span>
+								</div>
+							</form>
+						</div>
+						<div class="calc-block__success">
+							<div class="calc-block__success-icon">
+								<img src="./assets/img/icons/check-circle.svg" alt="Image">
+							</div>
+							<div class="calc-block__success-title">Спасибо!</div>
+							<div class="calc-block__success-text">Мы с вами свяжемся</div>
+							<button type="button" data-fls-popup-close=""
+								class="calc-block__success-link button-dark button-small">
+								<span>Хорошо</span>
+								<svg width="25" height="25" viewbox="0 0 25 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17.3597 13.5521L4.68037 13.5521L4.68037 11.469L17.3589 11.4683L11.7721 5.88143L13.2452 4.40829L21.3475 12.5105L13.2452 20.6128L11.7721 19.1397L17.3597 13.5521Z"
+										fill="currentColor"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
