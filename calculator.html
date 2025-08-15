@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Unbounded-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Unbounded-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-ExtraLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Devorno</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755257852874"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755257852874">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__left">
+							<button data-fls-menu="" type="button" class="header__burger icon-menu">
+								<span></span>
+							</button>
+							<a href="/" class="header__logo">
+								<div class="header__logo-icon">
+									<img alt="logo" src="./assets/img/logo.webp">
+								</div>
+								<div class="header__logo-text">
+									<img alt="logo text devorno" src="./assets/img/logo-text.webp">
+								</div>
+							</a>
+						</div>
+						<div class="header__right">
+							<button type="button" data-fls-popup-link="popup-quiz" class="header__btn button">
+								<span class="header__btn-text-1">Рассчитать стоимость проекта</span>
+								<span class="header__btn-text-2">Рассказать о проекте</span>
+							</button>
+							<div class="header__languages lang-block" data-fls-dynamic=".menu__body, 767.98">
+								<ul class="lang-block__list">
+									<li>
+										<a href="#" class="lang-block__link">Eng</a>
+									</li>
+									<li>
+										<a href="#" class="lang-block__link active">Ukr</a>
+									</li>
+								</ul>
+								<div class="lang-block__flag">
+									<img src="./assets/img/flag.svg" alt="Image" loading="lazy">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="menu__container">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#services" class="menu__link">Наши услуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#projects" class="menu__link">Кейсы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#about" class="menu__link">О нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#team" class="menu__link">Наша команда</a>
+									</li>
+									<li class="menu__item">
+										<a href="#reviews" class="menu__link">Отзывы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#contacts" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<div class="menu__contacts">
+									<a href="tel:+380964827425" class="menu__phone">+38 (096) 482 74 25</a>
+									<div class="menu__info">
+										<a href="mailto:devorno@gmail.com" class="menu__info-item">devorno@gmail.com</a>
+										<div class="menu__info-item">г. Одесса, ул. Ценетральная 27</div>
+										<div class="menu__info-item">
+											Пн - Пт, 10.00 - 19.00
+											<br>
+											Сб, Вс - выходные
+										</div>
+									</div>
+									<div class="menu__socials">
+										<a href="#" class="menu__socials-link">
+											<svg width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M26 52C40.3628 52 52 40.3628 52 26C52 11.6372 40.3628 0 26 0C11.6372 0 0 11.6372 0 26C0 40.3628 11.6372 52 26 52ZM11.8972 25.4367L36.9655 15.7712C38.129 15.3508 39.1452 16.055 38.7682 17.8143L38.7703 17.8122L34.502 37.921C34.1857 39.3467 33.3385 39.6933 32.1533 39.0217L25.6533 34.2312L22.5182 37.2515C22.1715 37.5982 21.879 37.8907 21.2073 37.8907L21.6688 31.2758L33.7155 20.3927C34.2398 19.9312 33.5985 19.6712 32.9073 20.1305L18.0202 29.5035L11.6025 27.5015C10.2093 27.0595 10.179 26.1083 11.8972 25.4367Z" fill="currentColor"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="calc-block">
+					<div class="calc-block__container">
+						<div class="calc-block__body">
+							<h1 class="calc-block__title title">Расчитать стоимость проекта</h1>
+							<form action="#" data-form-steps="" class="calc-block__form" method="POST">
+								<div data-form-step="" class="calc-block__step active">
+									<div class="calc-block__head">
+										<div class="calc-block__count">
+											<span class="calc-block__count-current">01</span>
+											<span class="calc-block__count-total">/06</span>
+										</div>
+										<div class="calc-block__subtitle">Выбор услуги</div>
+									</div>
+									<div class="service-options">
+										<label class="service-options__item">
+											<input class="service-options__input" checked type="radio" value="1" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-1.webp">
+												<span class="service-options__text">Приложение</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="2" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-2.webp">
+												<span class="service-options__text">Софт</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="3" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-3.webp">
+												<span class="service-options__text">Сайт</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="4" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-4.webp">
+												<span class="service-options__text">Моб приложение</span>
+											</div>
+										</label>
+										<label class="service-options__item">
+											<input class="service-options__input" type="radio" value="5" name="service">
+											<div class="service-options__label">
+												<img alt="Image" src="./assets/img/steps/image-5.webp">
+												<span class="service-options__text">Не знаю</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">02</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Нужна
+                                    консультация?</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1" name="consultation">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Треба консультація</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="consultation">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Ми знаємо точно що хочемо</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-6.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">03</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Когда готовы
+                                    начать?</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1" name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">Найближчим часом</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">1-2 міс</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="3" name="start">
+													<snap class="options__radio"></snap>
+													<span class="options__text">2 або більше міс</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-7.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">04</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Бюджет</div>
+											</div>
+											<div data-fls-radio="" class="options">
+												<label class="options__item">
+													<input class="options__input" checked type="radio" value="1" name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">до 5 тис $</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">5-10 $</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="3" name="budget">
+													<snap class="options__radio"></snap>
+													<span class="options__text">від 10 $</span>
+												</label>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-8.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">05</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">
+													Опис проекта, ідеї
+                                    або поточної
+                                    проблеми
+												</div>
+											</div>
+											<textarea autocomplete="off" name="comment" placeholder="Комменатрий" class="calc-block__input input"></textarea>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-9.webp">
+										</div>
+									</div>
+								</div>
+								<div data-form-step="" class="calc-block__step">
+									<div class="calc-block__inner">
+										<div class="calc-block__content">
+											<div class="calc-block__head">
+												<div class="calc-block__count">
+													<span class="calc-block__count-current">06</span>
+													<span class="calc-block__count-total">/06</span>
+												</div>
+												<div class="calc-block__subtitle">Контактні дані</div>
+											</div>
+											<div class="calc-block__inputs">
+												<input autocomplete="off" type="text" name="name" placeholder="Имя" class="calc-block__input input" required>
+												<input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="calc-block__input input" required>
+												<input autocomplete="off" type="text" name="email" placeholder="Email" class="calc-block__input input" required>
+											</div>
+										</div>
+										<div class="calc-block__img">
+											<img alt="Image" loading="lazy" src="./assets/img/steps/image-10.webp">
+										</div>
+									</div>
+								</div>
+								<div class="calc-block__bottom">
+									<div class="calc-block__btns">
+										<button data-steps-prev="" type="button" class="calc-block__btn button-empty button-small">
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.62666 11.4694L20.306 11.4694L20.306 13.5524L7.62739 13.5532L13.2143 19.1401L11.7411 20.6132L3.63887 12.5109L11.7411 4.40867L13.2143 5.88181L7.62666 11.4694Z" fill="currentColor"></path>
+											</svg>
+											<span>Назад</span>
+										</button>
+										<button data-steps-next="" type="button" class="calc-block__btn button-empty button-small">
+											<span>Далее</span>
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z" fill="currentColor"></path>
+											</svg>
+										</button>
+										<button data-steps-send="" type="submit" class="calc-block__btn button-empty button-small hide">
+											<span>Отправить</span>
+											<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="calc-block__progress">
+									<span></span>
+								</div>
+							</form>
+						</div>
+						<div class="calc-block__success">
+							<div class="calc-block__success-icon">
+								<img src="./assets/img/icons/check-circle.svg" alt="Image">
+							</div>
+							<div class="calc-block__success-title">Спасибо!</div>
+							<div class="calc-block__success-text">Мы с вами свяжемся</div>
+							<a href="index.html" class="calc-block__success-link button-dark button-small">
+								<span>Хорошо</span>
+								<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.3597 13.5521L4.68037 13.5521L4.68037 11.469L17.3589 11.4683L11.7721 5.88143L13.2452 4.40829L21.3475 12.5105L13.2452 20.6128L11.7721 19.1397L17.3597 13.5521Z" fill="currentColor"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

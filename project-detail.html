@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Unbounded-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Unbounded-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Geologica-ExtraLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Devorno</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755257852871"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755257852871">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__left">
+							<button data-fls-menu="" type="button" class="header__burger icon-menu">
+								<span></span>
+							</button>
+							<a href="/" class="header__logo">
+								<div class="header__logo-icon">
+									<img alt="logo" src="./assets/img/logo.webp">
+								</div>
+								<div class="header__logo-text">
+									<img alt="logo text devorno" src="./assets/img/logo-text.webp">
+								</div>
+							</a>
+						</div>
+						<div class="header__right">
+							<button type="button" data-fls-popup-link="popup-quiz" class="header__btn button">
+								<span class="header__btn-text-1">Рассчитать стоимость проекта</span>
+								<span class="header__btn-text-2">Рассказать о проекте</span>
+							</button>
+							<div class="header__languages lang-block" data-fls-dynamic=".menu__body, 767.98">
+								<ul class="lang-block__list">
+									<li>
+										<a href="#" class="lang-block__link">Eng</a>
+									</li>
+									<li>
+										<a href="#" class="lang-block__link active">Ukr</a>
+									</li>
+								</ul>
+								<div class="lang-block__flag">
+									<img src="./assets/img/flag.svg" alt="Image" loading="lazy">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="menu__container">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#services" class="menu__link">Наши услуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#projects" class="menu__link">Кейсы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#about" class="menu__link">О нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#team" class="menu__link">Наша команда</a>
+									</li>
+									<li class="menu__item">
+										<a href="#reviews" class="menu__link">Отзывы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#contacts" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<div class="menu__contacts">
+									<a href="tel:+380964827425" class="menu__phone">+38 (096) 482 74 25</a>
+									<div class="menu__info">
+										<a href="mailto:devorno@gmail.com" class="menu__info-item">devorno@gmail.com</a>
+										<div class="menu__info-item">г. Одесса, ул. Ценетральная 27</div>
+										<div class="menu__info-item">
+											Пн - Пт, 10.00 - 19.00
+											<br>
+											Сб, Вс - выходные
+										</div>
+									</div>
+									<div class="menu__socials">
+										<a href="#" class="menu__socials-link">
+											<svg width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M26 52C40.3628 52 52 40.3628 52 26C52 11.6372 40.3628 0 26 0C11.6372 0 0 11.6372 0 26C0 40.3628 11.6372 52 26 52ZM11.8972 25.4367L36.9655 15.7712C38.129 15.3508 39.1452 16.055 38.7682 17.8143L38.7703 17.8122L34.502 37.921C34.1857 39.3467 33.3385 39.6933 32.1533 39.0217L25.6533 34.2312L22.5182 37.2515C22.1715 37.5982 21.879 37.8907 21.2073 37.8907L21.6688 31.2758L33.7155 20.3927C34.2398 19.9312 33.5985 19.6712 32.9073 20.1305L18.0202 29.5035L11.6025 27.5015C10.2093 27.0595 10.179 26.1083 11.8972 25.4367Z" fill="currentColor"></path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="info-block">
+					<div class="info-block__container">
+						<div class="info-block__head">
+							<a href="#" class="info-block__back">
+								<svg width="57" height="57" viewbox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.379 26.1097L46.2878 26.1097L46.2878 30.8589L17.3807 30.8606L30.1187 43.5987L26.76 46.9575L8.28681 28.4843L26.76 10.0112L30.1187 13.3699L17.379 26.1097Z" fill="currentColor"></path>
+								</svg>
+								<span class="info-block__back-text">Назад</span>
+							</a>
+							<h1 class="info-block__title title">Разаработка СРМ ( кастомных)</h1>
+							<div class="info-block__head-text">
+								Разработка и запуск веб-ресурса проводится в несколько этапов. Только тщательная подготовка позволяет
+                реализовать
+                проект, который будет приносить бизнесу результат.
+							</div>
+						</div>
+						<img alt="Image" loading="lazy" src="./assets/img/project-detail/image-1.webp">
+						<div class="info-block__inner">
+							<div class="info-block__subtitle">Этапы работы</div>
+							<div class="info-block__content">
+								<div class="info-block__text">
+									<p>
+										Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                        IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не «вывела»
+                        бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько этапов. Только
+                        тщательная подготовка позволяет реализовать проект, который будет приносить бизнесу результат.
+                        Поэтому к выбору подрядчика нужно отнестись ответственно.
+									</p>
+									<p>
+										Сегодня нет практически ни одной компании, которая не «вывела» бы свой бизнес в онлайн.
+                        Разработка и запуск веб-ресурса проводится в несколько этапов. Только тщательная подготовка
+                        позволяет реализовать проект, который будет приносить бизнесу результат. Поэтому к выбору
+                        подрядчика нужно отнестись ответственно.
+									</p>
+								</div>
+								<div class="info-block__images">
+									<img alt="Image" loading="lazy" src="./assets/img/project-detail/image-2.webp">
+									<img alt="Image" loading="lazy" src="./assets/img/project-detail/image-3.webp">
+								</div>
+							</div>
+						</div>
+						<div class="info-block__inner">
+							<div class="info-block__subtitle">Сферы применения</div>
+							<div class="info-block__content">
+								<div class="info-block__text">
+									<p>
+										Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                        IT-специалистов разного профиля.
+                        Сегодня нет практически ни одной компании, которая не «вывела» бы свой бизнес в онлайн.
+									</p>
+								</div>
+								<div class="info-block__text">
+									<ul>
+										<li>
+											Визитка — сайт подходит для представителей малого бизнеса, которые хотят познакомить
+                            потенциальных клиентов со своей компанией. Как правило, такой ресурс содержит 3-5 страниц и
+                            дает общее представление об услугах и товарах;
+										</li>
+										<li>
+											Корпоративный — многостраничный сайт, который детально рассказывает о товарах/услугах
+                            бизнеса, при этом имеет расширенный функционал и возможности. Также может предназначаться
+                            для внутреннего использования сотрудниками;
+										</li>
+										<li>
+											Интернет-магазин — торговая площадка, позволяющая предлагать товар или услугу большему числу
+                            заказчиков. Могут подключаться платежные инструменты, предусматривается возможность создания
+                            личных кабинетов и другие полезные функции;
+										</li>
+									</ul>
+									<ol>
+										<li>
+											Визитка — сайт подходит для представителей малого бизнеса, которые хотят познакомить
+                            потенциальных клиентов со своей компанией. Как правило, такой ресурс содержит 3-5 страниц и
+                            дает общее представление об услугах и товарах;
+										</li>
+										<li>
+											Корпоративный — многостраничный сайт, который детально рассказывает о товарах/услугах
+                            бизнеса, при этом имеет расширенный функционал и возможности. Также может предназначаться
+                            для внутреннего использования сотрудниками;
+										</li>
+										<li>
+											Интернет-магазин — торговая площадка, позволяющая предлагать товар или услугу большему числу
+                            заказчиков. Могут подключаться платежные инструменты, предусматривается возможность создания
+                            личных кабинетов и другие полезные функции;
+										</li>
+									</ol>
+								</div>
+								<img alt="Image" loading="lazy" src="./assets/img/project-detail/image-4.webp">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="connection">
+					<div class="connection__container">
+						<div class="connection__body">
+							<h2 class="connection__title title">
+								Расскажите
+								<br>
+								о своём проекте —
+                мы подскажем, как его реализовать
+							</h2>
+							<form action="#" class="connection__form">
+								<div class="connection__inputs">
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="connection__input input">
+									<input autocomplete="off" type="text" name="email" placeholder="Email" class="connection__input input">
+									<textarea autocomplete="off" name="comment" placeholder="Комменатрий" class="connection__input input"></textarea>
+								</div>
+								<button type="submit" class="connection__send button-dark">
+									<span>Оставить заявку</span>
+									<svg width="38" height="38" viewbox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M25.0223 14.9088L11.7532 28.1779L9.57324 25.998L22.8408 12.7288H11.1473V9.64551H28.1056V26.6038H25.0223V14.9088Z" fill="currentColor"></path>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="services" id="services">
+					<div class="services__container">
+						<div class="services__body">
+							<h2 class="services__title title">Другие услуги</h2>
+							<div class="services__content">
+								<div data-fls-spollers="" data-fls-spollers-one="" class="spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Разаработка СОФТ</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Разаработка СРМ ( кастомных)</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Боты и автоматизация бизнеса</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Мобильные приложения (бизнес)</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Ит консалтинг</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>ИТ Аутсорс</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											<span>Сайты</span>
+											<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.1332 18.6738L0.712374 3.2529L3.24579 0.719482L18.6667 16.1385L18.6667 2.54877L22.25 2.54877L22.25 22.2571L2.54167 22.2571L2.54167 18.6738L16.1332 18.6738Z" fill="currentColor"></path>
+											</svg>
+										</summary>
+										<div class="spollers__body">
+											<p>
+												Создание сайтов — комплексный процесс, при выполнении которого задействуется множество
+                                IT-специалистов разного профиля. Сегодня нет практически ни одной компании, которая не
+                                «вывела» бы свой бизнес в онлайн. Разработка и запуск веб-ресурса проводится в несколько
+                                этапов. Только тщательная подготовка позволяет реализовать проект, который будет
+                                приносить
+                                бизнесу результат. Поэтому к выбору подрядчика нужно отнестись ответственно.
+											</p>
+											<a href="#" class="spollers__link">Подробнее</a>
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="cities">
+					<div class="cities__container">
+						<h2 class="cities__title title">Міста</h2>
+						<div class="cities__body">
+							<ul class="cities__list">
+								<li class="cities__item">Івано-Франківськ</li>
+								<li class="cities__item">Чернігів</li>
+								<li class="cities__item">Чернівці</li>
+								<li class="cities__item">Черкаси</li>
+								<li class="cities__item">Хмельницький</li>
+								<li class="cities__item">Харків</li>
+								<li class="cities__item">Ужгород</li>
+								<li class="cities__item">Суми</li>
+								<li class="cities__item">Рівне</li>
+								<li class="cities__item">Полтава</li>
+								<li class="cities__item">Одеса</li>
+								<li class="cities__item">Миколаїв</li>
+								<li class="cities__item">Львів</li>
+								<li class="cities__item">Луцьк</li>
+								<li class="cities__item">Кропивницький</li>
+								<li class="cities__item">Дніпро</li>
+								<li class="cities__item">Вінниця</li>
+								<li class="cities__item">Запоріжжя</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+			<section class="footer footer--dark" id="contacts">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__content">
+							<h2 class="footer__title title">Контакты</h2>
+							<div class="footer__content-body">
+								<div class="footer__info">
+									<a href="tel:+380964827425" class="footer__phone">+38 (096) 482 74 25</a>
+									<a href="mailto:devorno@gmail.com" class="footer__info-item">devorno@gmail.com</a>
+									<div class="footer__info-item">г. Одесса, ул. Ценетральная 27</div>
+									<div class="footer__info-item">
+										Пн - Пт, 10.00 - 19.00
+										<br>
+										Сб, Вс - выходные
+									</div>
+								</div>
+								<div class="footer__socials">
+									<a href="#" class="footer__socials-link">
+										<svg width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17 33.1309C26.1149 33.1309 33.5 25.7457 33.5 16.6309C33.5 7.51598 26.1149 0.130859 17 0.130859C7.88512 0.130859 0.5 7.51598 0.5 16.6309C0.5 25.7457 7.88512 33.1309 17 33.1309ZM8.05013 16.2734L23.9589 10.1395C24.6973 9.87273 25.3421 10.3196 25.1029 11.4361L25.1042 11.4347L22.3955 24.1961C22.1947 25.1009 21.6571 25.3209 20.905 24.8946L16.78 21.8545L14.7904 23.7712C14.5704 23.9912 14.3848 24.1769 13.9585 24.1769L14.2514 19.979L21.8964 13.0724C22.2291 12.7795 21.8221 12.6145 21.3835 12.906L11.9359 18.8542L7.86312 17.5837C6.979 17.3032 6.95975 16.6996 8.05013 16.2734Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<button type="button" data-fls-popup-link="popup" class="footer__btn button button-small">
+								<span>Связаться с нами</span>
+								<svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.171 9.93711L8.20534 18.9027L6.73242 17.4298L15.697 8.46419H7.79596V6.38086H19.2543V17.8392H17.171V9.93711Z" fill="currentColor"></path>
+								</svg>
+							</button>
+						</div>
+						<div class="footer__map" id="map"></div>
+						<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Wsu_Q329ke8E1PQJBaSSKP-014h-eXs&libraries=places&callback=initMap"></script>
+						<script>
+              let map;
+
+              function initMap() {
+                const placeId = "ChIJl33R_h9o0EARqCaIrCkVgRQ";
+
+                map = new google.maps.Map(document.getElementById("map"), {
+                  center: {
+                    lat: 0,
+                    lng: 0
+                  },
+                  zoom: 15,
+                  // mapId: "DETAILED_MAP",
+                  styles: [{
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#242f3e"
+                      }]
+                    },
+                    {
+                      elementType: "labels.text.stroke",
+                      stylers: [{
+                        color: "#242f3e"
+                      }]
+                    },
+                    {
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#746855"
+                      }]
+                    },
+                    {
+                      featureType: "administrative.locality",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#d59563"
+                      }],
+                    },
+                    {
+                      featureType: "poi",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#d59563"
+                      }],
+                    },
+                    {
+                      featureType: "poi.park",
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#263c3f"
+                      }],
+                    },
+                    {
+                      featureType: "poi.park",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#6b9a76"
+                      }],
+                    },
+                    {
+                      featureType: "road",
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#38414e"
+                      }],
+                    },
+                    {
+                      featureType: "road",
+                      elementType: "geometry.stroke",
+                      stylers: [{
+                        color: "#212a37"
+                      }],
+                    },
+                    {
+                      featureType: "road",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#9ca5b3"
+                      }],
+                    },
+                    {
+                      featureType: "road.highway",
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#746855"
+                      }],
+                    },
+                    {
+                      featureType: "road.highway",
+                      elementType: "geometry.stroke",
+                      stylers: [{
+                        color: "#1f2835"
+                      }],
+                    },
+                    {
+                      featureType: "road.highway",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#f3d19c"
+                      }],
+                    },
+                    {
+                      featureType: "transit",
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#2f3948"
+                      }],
+                    },
+                    {
+                      featureType: "transit.station",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#d59563"
+                      }],
+                    },
+                    {
+                      featureType: "water",
+                      elementType: "geometry",
+                      stylers: [{
+                        color: "#17263c"
+                      }],
+                    },
+                    {
+                      featureType: "water",
+                      elementType: "labels.text.fill",
+                      stylers: [{
+                        color: "#515c6d"
+                      }],
+                    },
+                    {
+                      featureType: "water",
+                      elementType: "labels.text.stroke",
+                      stylers: [{
+                        color: "#17263c"
+                      }],
+                    },
+                  ],
+                });
+
+                const serviceMap = new google.maps.places.PlacesService(map);
+
+                serviceMap.getDetails({
+                  placeId: placeId
+                }, (place, status) => {
+                  if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    map.setCenter(place.geometry.location);
+
+                    const marker = new google.maps.Marker({
+                      map: map,
+                      position: place.geometry.location,
+                      title: place.name,
+                      icon: {
+                        url: "assets/img/icons/marker.svg", // замени на путь к своему PNG
+                        scaledSize: new google.maps.Size(30, 30) // подгони под нужный размер
+                      }
+                    });
+
+                    const contentString = `
+				                <div>
+				                    <img src='assets/img/logo.webp' style='height:40px;'/>
+									<h3>Devorno IT company</h3>
+				                    <p class="rating">⭐ ${place.rating} / 5.0</p>
+				                    <p><strong>Кількість відгуків:</strong> ${place.user_ratings_total}</p>
+				                    <p><strong>Адреса:</strong> ${place.formatted_address}</p>
+				                </div>
+				            `;
+
+                    const infowindow = new google.maps.InfoWindow({
+                      content: contentString,
+                      maxWidth: 300
+                    });
+
+                    marker.addListener("click", () => {
+                      infowindow.open(map, marker);
+                    });
+
+                    infowindow.open(map, marker);
+                  } else {
+                    alert("Не вдалося завантажити деталі місця: " + status);
+                  }
+                });
+              }
+						</script>
+					</div>
+				</div>
+			</section>
+			<footer class="footernew">
+				<div class="footernew__container">
+					<div class="footernew__body">
+						<a href="/" class="footernew__logo">
+							<div class="footernew__logo-icon">
+								<img alt="logo" loading="lazy" src="./assets/img/logo.webp">
+							</div>
+							<div class="footernew__logo-text">
+								<img alt="logo text devorno" loading="lazy" src="./assets/img/logo-text.webp">
+							</div>
+						</a>
+						<div class="footernew__copy">© 2025 Devorno</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30 2.35703L27.643 0L15 12.6435L2.35703 0L0 2.35703L12.643 15L0 27.643L2.35703 30L15 17.357L27.643 30L30 27.643L17.357 15L30 2.35703Z" fill="currentColor"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__title">Расскажите о своём проекте — мы подскажем, как его реализовать</div>
+						<form action="#" class="popup__form">
+							<div class="popup__form-inputs">
+								<div class="popup__form-row">
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="popup__input input">
+									<input autocomplete="off" type="text" name="email" placeholder="Email" class="popup__input input">
+								</div>
+								<textarea autocomplete="off" name="comment" placeholder="Комменатрий" class="popup__input input"></textarea>
+							</div>
+							<button type="submit" class="popup__send button-dark">
+								<span>Оставить заявку</span>
+								<svg width="38" height="38" viewbox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M25.0223 14.9088L11.7532 28.1779L9.57324 25.998L22.8408 12.7288H11.1473V9.64551H28.1056V26.6038H25.0223V14.9088Z" fill="currentColor"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-quiz" aria-hidden="true" class="popup popup--quiz">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30 2.35703L27.643 0L15 12.6435L2.35703 0L0 2.35703L12.643 15L0 27.643L2.35703 30L15 17.357L27.643 30L30 27.643L17.357 15L30 2.35703Z" fill="currentColor"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="calc-block">
+						<div class="calc-block__container">
+							<div class="calc-block__body">
+								<h1 class="calc-block__title title">Розрахунок</h1>
+								<form action="/submit" data-form-steps="" class="calc-block__form" method="POST">
+									<div data-form-step="" class="calc-block__step active">
+										<div class="calc-block__head">
+											<div class="calc-block__count">
+												<span class="calc-block__count-current">01</span>
+												<span class="calc-block__count-total">/06</span>
+											</div>
+											<div class="calc-block__subtitle">Выбор услуги</div>
+										</div>
+										<div class="service-options">
+											<label class="service-options__item">
+												<input class="service-options__input" checked type="radio" value="1" name="service">
+												<div class="service-options__label">
+													<img alt="Image" src="./assets/img/steps/image-1.webp">
+													<span class="service-options__text">Приложение</span>
+												</div>
+											</label>
+											<label class="service-options__item">
+												<input class="service-options__input" type="radio" value="2" name="service">
+												<div class="service-options__label">
+													<img alt="Image" src="./assets/img/steps/image-2.webp">
+													<span class="service-options__text">Софт</span>
+												</div>
+											</label>
+											<label class="service-options__item">
+												<input class="service-options__input" type="radio" value="3" name="service">
+												<div class="service-options__label">
+													<img alt="Image" src="./assets/img/steps/image-3.webp">
+													<span class="service-options__text">Сайт</span>
+												</div>
+											</label>
+											<label class="service-options__item">
+												<input class="service-options__input" type="radio" value="4" name="service">
+												<div class="service-options__label">
+													<img alt="Image" src="./assets/img/steps/image-4.webp">
+													<span class="service-options__text">Моб приложение</span>
+												</div>
+											</label>
+											<label class="service-options__item">
+												<input class="service-options__input" type="radio" value="5" name="service">
+												<div class="service-options__label">
+													<img alt="Image" src="./assets/img/steps/image-5.webp">
+													<span class="service-options__text">Не знаю</span>
+												</div>
+											</label>
+										</div>
+									</div>
+									<div data-form-step="" class="calc-block__step">
+										<div class="calc-block__inner">
+											<div class="calc-block__content">
+												<div class="calc-block__head">
+													<div class="calc-block__count">
+														<span class="calc-block__count-current">02</span>
+														<span class="calc-block__count-total">/06</span>
+													</div>
+													<div class="calc-block__subtitle">Нужна
+												консультация?</div>
+												</div>
+												<div data-fls-radio="" class="options">
+													<label class="options__item">
+														<input class="options__input" checked type="radio" value="1" name="consultation">
+														<snap class="options__radio"></snap>
+														<span class="options__text">Треба консультація</span>
+													</label>
+													<label class="options__item">
+														<input class="options__input" type="radio" value="2" name="consultation">
+														<snap class="options__radio"></snap>
+														<span class="options__text">Ми знаємо точно що хочемо</span>
+													</label>
+												</div>
+											</div>
+											<div class="calc-block__img">
+												<img alt="Image" loading="lazy" src="./assets/img/steps/image-6.webp">
+											</div>
+										</div>
+									</div>
+									<div data-form-step="" class="calc-block__step">
+										<div class="calc-block__inner">
+											<div class="calc-block__content">
+												<div class="calc-block__head">
+													<div class="calc-block__count">
+														<span class="calc-block__count-current">03</span>
+														<span class="calc-block__count-total">/06</span>
+													</div>
+													<div class="calc-block__subtitle">Когда готовы
+												начать?</div>
+												</div>
+												<div data-fls-radio="" class="options">
+													<label class="options__item">
+														<input class="options__input" checked type="radio" value="1" name="start">
+														<snap class="options__radio"></snap>
+														<span class="options__text">Найближчим часом</span>
+													</label>
+													<label class="options__item">
+														<input class="options__input" type="radio" value="2" name="start">
+														<snap class="options__radio"></snap>
+														<span class="options__text">1-2 міс</span>
+													</label>
+													<label class="options__item">
+														<input class="options__input" type="radio" value="3" name="start">
+														<snap class="options__radio"></snap>
+														<span class="options__text">2 або більше міс</span>
+													</label>
+												</div>
+											</div>
+											<div class="calc-block__img">
+												<img alt="Image" loading="lazy" src="./assets/img/steps/image-7.webp">
+											</div>
+										</div>
+									</div>
+									<div data-form-step="" class="calc-block__step">
+										<div class="calc-block__inner">
+											<div class="calc-block__content">
+												<div class="calc-block__head">
+													<div class="calc-block__count">
+														<span class="calc-block__count-current">04</span>
+														<span class="calc-block__count-total">/06</span>
+													</div>
+													<div class="calc-block__subtitle">Бюджет</div>
+												</div>
+												<div data-fls-radio="" class="options">
+													<label class="options__item">
+														<input class="options__input" checked type="radio" value="1" name="budget">
+														<snap class="options__radio"></snap>
+														<span class="options__text">до 5 тис $</span>
+													</label>
+													<label class="options__item">
+														<input class="options__input" type="radio" value="2" name="budget">
+														<snap class="options__radio"></snap>
+														<span class="options__text">5-10 $</span>
+													</label>
+													<label class="options__item">
+														<input class="options__input" type="radio" value="3" name="budget">
+														<snap class="options__radio"></snap>
+														<span class="options__text">від 10 $</span>
+													</label>
+												</div>
+											</div>
+											<div class="calc-block__img">
+												<img alt="Image" loading="lazy" src="./assets/img/steps/image-8.webp">
+											</div>
+										</div>
+									</div>
+									<div data-form-step="" class="calc-block__step">
+										<div class="calc-block__inner">
+											<div class="calc-block__content">
+												<div class="calc-block__head">
+													<div class="calc-block__count">
+														<span class="calc-block__count-current">05</span>
+														<span class="calc-block__count-total">/06</span>
+													</div>
+													<div class="calc-block__subtitle">Опис проекта, ідеї
+												або поточної
+												проблеми</div>
+												</div>
+												<textarea autocomplete="off" name="comment" placeholder="Комменатрий" class="calc-block__input input"></textarea>
+											</div>
+											<div class="calc-block__img">
+												<img alt="Image" loading="lazy" src="./assets/img/steps/image-9.webp">
+											</div>
+										</div>
+									</div>
+									<div data-form-step="" class="calc-block__step">
+										<div class="calc-block__inner">
+											<div class="calc-block__content">
+												<div class="calc-block__head">
+													<div class="calc-block__count">
+														<span class="calc-block__count-current">06</span>
+														<span class="calc-block__count-total">/06</span>
+													</div>
+													<div class="calc-block__subtitle">Контактні дані</div>
+												</div>
+												<div class="calc-block__inputs">
+													<input autocomplete="off" type="text" name="name" placeholder="Имя" class="calc-block__input input" required>
+													<input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="calc-block__input input" required>
+													<input autocomplete="off" type="text" name="email" placeholder="Email" class="calc-block__input input" required>
+												</div>
+											</div>
+											<div class="calc-block__img">
+												<img alt="Image" loading="lazy" src="./assets/img/steps/image-10.webp">
+											</div>
+										</div>
+									</div>
+									<div class="calc-block__bottom">
+										<div class="calc-block__btns">
+											<button data-steps-prev="" type="button" class="calc-block__btn button-empty button-small">
+												<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.62666 11.4694L20.306 11.4694L20.306 13.5524L7.62739 13.5532L13.2143 19.1401L11.7411 20.6132L3.63887 12.5109L11.7411 4.40867L13.2143 5.88181L7.62666 11.4694Z" fill="currentColor"></path>
+												</svg>
+												<span>Назад</span>
+											</button>
+											<button data-steps-next="" type="button" class="calc-block__btn button-empty button-small">
+												<span>Далее</span>
+												<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<button data-steps-send="" type="submit" class="calc-block__btn button-empty button-small hide">
+												<span>Отправить</span>
+												<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M17.3597 13.5525L4.68037 13.5526L4.68037 11.4695L17.3589 11.4688L11.7721 5.88191L13.2452 4.40878L21.3475 12.511L13.2452 20.6133L11.7721 19.1402L17.3597 13.5525Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="calc-block__progress">
+										<span></span>
+									</div>
+								</form>
+							</div>
+							<div class="calc-block__success">
+								<div class="calc-block__success-icon">
+									<img src="./assets/img/icons/check-circle.svg" alt="Image">
+								</div>
+								<div class="calc-block__success-title">Спасибо!</div>
+								<div class="calc-block__success-text">Мы с вами свяжемся</div>
+								<button type="button" data-fls-popup-close="" class="calc-block__success-link button-dark button-small">
+									<span>Хорошо</span>
+									<svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.3597 13.5521L4.68037 13.5521L4.68037 11.469L17.3589 11.4683L11.7721 5.88143L13.2452 4.40829L21.3475 12.5105L13.2452 20.6128L11.7721 19.1397L17.3597 13.5521Z" fill="currentColor"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
